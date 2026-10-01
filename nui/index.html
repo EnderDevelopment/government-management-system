@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Government System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .list {
+            margin-top: 20px;
+        }
+        .list-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Government System</h1>
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department">
+                <option value="Police">Police</option>
+                <option value="Fire">Fire</option>
+                <option value="Health">Health</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rank">Rank:</label>
+            <select id="rank">
+                <option value="Officer">Officer</option>
+                <option value="Sergeant">Sergeant</option>
+                <option value="Captain">Captain</option>
+                <option value="Commissioner">Commissioner</option>
+            </select>
+        </div>
+        <button id="apply">Apply</button>
+        <div class="list" id="licenses">
+            <h2>Licenses</h2>
+        </div>
+        <div class="list" id="applications">
+            <h2>Applications</h2>
+        </div>
+        <div class="list" id="employees">
+            <h2>Employees</h2>
+        </div>
+        <button id="close">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
